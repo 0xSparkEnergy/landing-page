@@ -1,620 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Spark Energy Token - Home</title>
+<head>
+  <meta charset="utf-8">
+  <title>Spark Energy Token - Home</title>
 
-    <!-- SEO Meta Tags-->
-    <meta name="description" content="Spark Energy Token is a digital currency on the Binance Smart Chain. It leverages the use of blockchain techhnology to make it ease payments for EV charging and other renewable energy solutions">
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Spark Energy Token is a purpose driven token aimed at creating a cleaner environment through the promotion of clean energy and electric vehicles payment solutions. Buy now on PancakeSwap.">
 
-    <!-- Viewport-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/sparkfavicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sparkfav.png">
-    <link rel="manifest" href="assets/img/site.webmanifest">
-    <link rel="mask-icon" color="#5bbad5" href="assets/img/safari-pinned-tab.svg">
-    <meta name="msapplication-TileColor" content="#766df4">
-    <meta name="theme-color" content="#ffffff">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/sparkfavicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sparkfav.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+  <link rel="mask-icon" color="#5bbad5" href="assets/img/safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#766df4">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Vendor Styles-->
-    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
-    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+  <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
 
-    <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
-    <!-- Page loading styles-->
-    <style>.cs-page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      .cs-page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .cs-page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .cs-page-loading.active > .cs-page-loading-inner {
-        opacity: 1;
-      }
-      .cs-page-loading-inner > span {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #787a80;
-      }
-      .cs-page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        background-color: #cfcfd1;
-        border-radius: 50%;
-        opacity: 0;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      @-webkit-keyframes spinner {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0);
-        }
-        50% {
-          opacity: 1;
-          -webkit-transform: none;
-          transform: none;
-        }
-      }
-      @keyframes spinner {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0);
-        }
-        50% {
-          opacity: 1;
-          -webkit-transform: none;
-          transform: none;
-        }
-      }
-    </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBTSH58090"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Page loading scripts-->
-    <script>
-      (function () {
-        window.onload = function () {
-          var preloader = document.querySelector('.cs-page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 2000);
-        };
-      })();
-    </script>
+    gtag('config', 'G-DBTSH58090');
+  </script>
 
-    <!-- Demo switcher off-canvas toggle styles -->
-    <style>.cs-demo-switcher {
-        position: fixed;
-        display: block;
-        top: 50%;
-        right: 1rem;
-        z-index: 100;
-      }
-      .cs-demo-switcher-inner {
-        width: 3rem;
-        height: 3rem;
-        border: 1px solid #e5e8ed;
-        border-radius: 50%;
-        background-color: #fff;
-        color: #1e212c;
-        font-size: 1.25rem;
-        line-height: 3rem;
-        text-align: center;
-        text-decoration: none;
-        box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
-      }
-    </style>
+  <!-- Page loading styles-->
+  <style>.cs-page-loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .4s .2s ease-in-out;
+    transition: all .4s .2s ease-in-out;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+  }
+  .cs-page-loading.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .cs-page-loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+  }
+  .cs-page-loading.active > .cs-page-loading-inner {
+    opacity: 1;
+  }
+  .cs-page-loading-inner > span {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #787a80;
+  }
+  .cs-page-spinner {
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: .75rem;
+    vertical-align: text-bottom;
+    background-color: #cfcfd1;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: spinner .75s linear infinite;
+    animation: spinner .75s linear infinite;
+  }
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes spinner {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  </style>
+
+  <!-- Page loading scripts-->
+  <script>
+    (function () {
+      window.onload = function () {
+        var preloader = document.querySelector('.cs-page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 2000);
+      };
+    })();
+  </script>
+
+  <!-- Demo switcher off-canvas toggle styles -->
+  <style>.cs-demo-switcher {
+    position: fixed;
+    display: block;
+    top: 50%;
+    right: 1rem;
+    z-index: 100;
+  }
+  .cs-demo-switcher-inner {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #e5e8ed;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #1e212c;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
+  }
+
+  .chart .icon svg{
+    width: 50px;
+    padding-right: 10px
+  }
+
+  a.chart{
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #dc9cce;
+    border-color: #dc9cce;
+  }
+  </style>
 
 
-  </head>
+</head>
 
-  <!-- Body-->
-  <body>
+<!-- Body-->
+<body>
 
 
-    <!-- Page loading spinner-->
-    <div class="cs-page-loading active">
-      <div class="cs-page-loading-inner">
-        <div class="cs-page-spinner"></div><span>Loading...</span>
+<!-- Page loading spinner-->
+<div class="cs-page-loading active">
+  <div class="cs-page-loading-inner">
+    <div class="cs-page-spinner"></div><span>Loading...</span>
+  </div>
+</div>
+
+<!-- Main content-->
+<!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+<main class="cs-page-wrapper position-relative">
+
+
+
+
+
+
+  <!-- Navbar -->
+  <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+  <header class="cs-header navbar navbar-expand-md navbar-dark navbar-sticky navbar-floating">
+    <div class="container px-0 px-xl-3">
+      <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
+        <img class="navbar-brand-static" src="assets/img/logo-light.svg" alt="Createx Logo" width="130">
+        <img class="navbar-brand-floating" src="assets/img/logo-dark.svg" alt="Createx Logo" width="130">
+      </a>
+      <div class="d-flex align-items-center order-md-3">
+        <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="contacts.html">Buy Now</a>
+        <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <nav class="collapse navbar-collapse order-md-2" id="navbarCollapse1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About SET</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Contract</a>
+          </li>
+
+          <li class="nav-item d-sm-none d-block">
+            <a class="nav-link" href="contacts.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero-->
+  <section class="jarallax d-flex align-items-stretch min-vh-100 bg-dark overflow-hidden pt-5" data-jarallax data-speed="0.5">
+    <div class="jarallax-img" style="background-image: url(assets/img/home/hero-bg.jpg);"></div>
+    <div class="container d-flex flex-column justify-content-around pt-5 pt-sm-4 pb-5">
+      <div class="row mt-md-5 pt-sm-5">
+        <div class="col-lg-6 col-md-6 order-md-1 order-2 text-md-left text-center">
+          <div class="mt-lg-5 mb-4">
+            <a href="" class="chart">
+                  <span class="icon">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.71 270.71"><defs><style>.cls-1{fill:#039aee;}.cls-2{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle class="cls-1" cx="135.35" cy="135.35" r="135.35"/><path class="cls-2" d="M142,163.27h51.62a3.69,3.69,0,0,0,2.46-6.44l-21-18.81a3.69,3.69,0,0,0-4.93,0l-1.36,1.21a3.69,3.69,0,0,1-5.86-1.29l-16.5-38.57a3.69,3.69,0,0,0-6.79,0l-11,25.56a3.7,3.7,0,0,1-6.68.25h0a3.7,3.7,0,0,0-6.55,0L98.31,157.86a3.69,3.69,0,0,0,3.27,5.41Z"/><polygon class="cls-2" points="88.42 167.92 88.42 74.11 75.74 74.11 75.74 180.6 210.97 180.6 210.97 167.92 88.42 167.92"/></g></g></svg>
+                  </span>
+              <span class="font-size-sm font-weight-bold text-light">See Chart</span>
+            </a>
+          </div>
+          <h1 class="mb-lg-5 mb-4 pb-2 display-1 text-light">The future green energy token<span class="text-primary"></span></h1>
+          <a href="#portfolio" class="mb-lg-0 mb-5 btn btn-lg btn-primary btn-pill" data-scroll>Buy SET </a>
+        </div>
+        <div class="col-lg-6 col-md-6 order-md-2 order-1">
+          <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-12">
+              <div class="cs-parallax mb-md-0 mb-4">
+                <div class="cs-parallax-layer" data-depth="-0.09" style="z-index: 3;">
+                  <img src="assets/img/home/hero-image/01.png" alt="Layer">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-md-flex d-none align-items-center mt-lg-n5 mt-5">
+        <div class="col-4">
+          <ul class="pl-4 list-unstyled border-left border-primary font-weight-bold text-muted text-uppercase lead">
+            <li>100%</li>
+            <li>Liquidity</li>
+            <li>Locked</li>
+            <li>For 100 years</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <a href="#mission" data-scroll class="d-flex align-items-center justify-content-center font-size-sm font-weight-bold text-light text-decoration-none">
+            <i class="cxi-arrow-down h4 mr-2 mb-0 text-light"></i>
+            Scroll down
+          </a>
+        </div>
+        <div class="col-4">
+          <div class="text-right">
+
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Main content-->
-    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
-    <main class="cs-page-wrapper position-relative">
+  </section>
 
 
+  <!-- Mission -->
+  <section id="mission" class="container py-lg-6 py-5 my-3 mt-lg-1 mb-sm-5">
+    <h3 class="h6 mb-3 pb-1 text-uppercase">Who we are</h3>
+    <div class="row">
+      <div class="col-lg-7 col-md-6">
+        <p class="h3 mb-md-0 mb-3 pb-md-0 pb-1 line-height-base">Spark Energy Token is a purpose driven token aimed at creating a cleaner environment through the promotion of clean energy and  electric vehicles payment solutions. </p>
+      </div>
 
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section class="container py-lg-6 mb-md-3 mb-lg-0 py-5">
+    <h3 class="h6 mb-2 text-uppercase">What we do</h3>
+    <h2 class="h1 mb-lg-4 mb-2 pb-3">Our Services</h2>
+    <div class="row align-items-center">
+      <div class="col-md-5 order-md-1 order-2">
 
+        <!-- Accordion made of cards -->
+        <div class="accordion" id="accordionServices">
 
-      <!-- Navbar -->
-      <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
-      <header class="cs-header navbar navbar-expand-md navbar-dark navbar-sticky navbar-floating">
-        <div class="container px-0 px-xl-3">
-          <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
-            <img class="navbar-brand-static" src="assets/img/logo-light.svg" alt="Createx Logo" width="130">
-            <img class="navbar-brand-floating" src="assets/img/logo-dark.svg" alt="Createx Logo" width="130">
-          </a>
-          <div class="d-flex align-items-center order-md-3">
-            <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="contacts.html">Buy Now</a>
-            <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <nav class="collapse navbar-collapse order-md-2" id="navbarCollapse1">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">About SET</a>
-
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Contract</a>
-              </li>
-
-              <li class="nav-item d-sm-none d-block">
-                <a class="nav-link" href="contacts.html">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-
-      <!-- Hero-->
-      <section class="jarallax d-flex align-items-stretch min-vh-100 bg-dark overflow-hidden pt-5" data-jarallax data-speed="0.5">
-        <div class="jarallax-img" style="background-image: url(assets/img/home/hero-bg.jpg);"></div>
-        <div class="container d-flex flex-column justify-content-around pt-5 pt-sm-4 pb-5">
-          <div class="row mt-md-5 pt-sm-5">
-            <div class="col-lg-4 col-md-5 order-md-1 order-2 text-md-left text-center">
-              <div class="mt-lg-5 mb-4">
-                <a href="" class="cs-video-btn mr-3" data-gallery-video data-sub-html="<h6 class='font-size-sm text-light'>Agency Showreel</h6>"></a>
-                <span class="font-size-sm font-weight-bold text-light">See Chart</span>
-              </div>
-              <h1 class="mb-lg-5 mb-4 pb-2 display-1 text-light">Clean Energy!!!<span class="text-primary"></span></h1>
-              <a href="#portfolio" class="mb-lg-0 mb-5 btn btn-lg btn-primary btn-pill" data-scroll>Buy SET </a>
+          <!-- Card -->
+          <div class="card">
+            <div class="card-header pt-0" id="servicesHeadingOne">
+              <h3 class="accordion-heading">
+                <a href="#servicesCollapseOne" role="button" data-toggle="collapse" data-binded-content="#identity" aria-expanded="true" aria-controls="servicesCollapseOne">
+                  <span class="accordion-indicator"></span>
+                  EV Charging Payment
+                </a>
+              </h3>
             </div>
-            <div class="col-lg-8 col-md-7 order-md-2 order-1">
-              <div class="row justify-content-center">
-                <div class="col-sm-8 col-md-12">
-                  <div class="cs-parallax mb-md-0 mb-4">
-                    <div class="cs-parallax-layer" data-depth="-0.09" style="z-index: 3;">
-                      <img src="assets/img/home/hero-image/01.png" alt="Layer">
-                    </div>
-
-                  </div>
-                </div>
+            <div class="collapse show" id="servicesCollapseOne" aria-labelledby="servicesHeadingOne" data-parent="#accordionServices">
+              <div class="card-body">
+                The Spark Energy Token comes inbuilt with the functionality that enables easy payments for Electric Vehicle (EV) charging, through our dedicated mobile app. We will incorporate partner charging stations across the world.
               </div>
             </div>
           </div>
-          <div class="row d-md-flex d-none align-items-center mt-lg-n5">
-            <div class="col-4">
-              <ul class="pl-4 list-unstyled border-left border-primary font-weight-bold text-muted text-uppercase lead">
-                <li>100%</li>
-                <li>Liquidity</li>
-                <li>Locked</li>
-                <li>For 100 years</li>
-              </ul>
-            </div>
-            <div class="col-4">
-              <a href="#mission" data-scroll class="d-flex align-items-center justify-content-center font-size-sm font-weight-bold text-light text-decoration-none">
-                <i class="cxi-arrow-down h4 mr-2 mb-0 text-light"></i>
-                Scroll down
-              </a>
-            </div>
-            <div class="col-4">
-              <div class="text-right">
 
+          <!-- Card -->
+          <div class="card">
+            <div class="card-header" id="servicesHeadingTwo">
+              <h3 class="accordion-heading">
+                <a href="#servicesCollapseTwo" role="button" data-toggle="collapse" data-binded-content="#web" aria-expanded="false" aria-controls="servicesHeadingTwo" class="collapsed">
+                  <span class="accordion-indicator"></span>
+                  EV Milleage Rewards
+                </a>
+              </h3>
+            </div>
+            <div class="collapse" id="servicesCollapseTwo" aria-labelledby="servicesHeadingTwo" data-parent="#accordionServices">
+              <div class="card-body">
+                With our mobile app, drivers will be able to earn, without a cap, the Spark Energy Token. This mean there is no limit to what drivers can earn when they use our token to settle their EV charging and transportation needs.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-header" id="servicesHeadingThree">
+              <h3 class="accordion-heading">
+                <a href="#servicesCollapseThree" role="button" data-toggle="collapse" data-binded-content="#photography" aria-expanded="false" aria-controls="servicesCollapseThree" class="collapsed">
+                  <span class="accordion-indicator"></span>
+                  Power Wall Rewards
+                </a>
+              </h3>
+            </div>
+            <div class="collapse" id="servicesCollapseThree" aria-labelledby="servicesHeadingThree" data-parent="#accordionServices">
+              <div class="card-body">
+                Modern homes come equipped with effective Inverters to satisfy in-home energy needs. Spark Energy wants to encourage this development. For every user of Powerwalls and Inverters connected to our system through our app, there will be rewards in Spark Energy Tokens(SET).
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col-lg-6 col-md-7 order-md-2 order-1 ml-auto">
 
-
-      <!-- Mission -->
-      <section id="mission" class="container py-lg-6 py-5 my-3 mt-lg-1 mb-sm-5">
-        <h3 class="h6 mb-3 pb-1 text-uppercase">Who we are</h3>
-        <div class="row">
-          <div class="col-lg-7 col-md-6">
-            <p class="h3 mb-md-0 mb-3 pb-md-0 pb-1 line-height-base">Spark Energy Token is a digital currency on the Binance Smart Chain. It leverages the use of blockchain techhnology to make it ease payments for EV charging and other renewable energy solutions </p>
+        <!-- Images binded to accordion -->
+        <div class="cs-binded-content mb-4">
+          <div id="identity" class="cs-binded-item active">
+            <img class="d-block" src="assets/img/Spark-images-EV-charging.jpg" alt="Identity Design &amp; Illustration">
           </div>
-
-        </div>
-      </section>
-
-      <!-- Services -->
-      <section class="container py-lg-6 mb-md-3 mb-lg-0 py-5">
-        <h3 class="h6 mb-2 text-uppercase">What we do</h3>
-        <h2 class="h1 mb-lg-4 mb-2 pb-3">Our services</h2>
-        <div class="row align-items-center">
-          <div class="col-md-5 order-md-1 order-2">
-
-            <!-- Accordion made of cards -->
-            <div class="accordion" id="accordionServices">
-
-              <!-- Card -->
-              <div class="card">
-                <div class="card-header pt-0" id="servicesHeadingOne">
-                  <h3 class="accordion-heading">
-                    <a href="#servicesCollapseOne" role="button" data-toggle="collapse" data-binded-content="#identity" aria-expanded="true" aria-controls="servicesCollapseOne">
-                      <span class="accordion-indicator"></span>
-                      Ev Charging Payment
-                    </a>
-                  </h3>
-                </div>
-                <div class="collapse show" id="servicesCollapseOne" aria-labelledby="servicesHeadingOne" data-parent="#accordionServices">
-                  <div class="card-body">
-                    Using the Spark Enery Token, you can now easily pay for charging your EV from our mobile app at any of our partner charging stations acrooss the globe.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card">
-                <div class="card-header" id="servicesHeadingTwo">
-                  <h3 class="accordion-heading">
-                    <a href="#servicesCollapseTwo" role="button" data-toggle="collapse" data-binded-content="#web" aria-expanded="false" aria-controls="servicesHeadingTwo" class="collapsed">
-                      <span class="accordion-indicator"></span>
-                      EV Milleage Rewards
-                    </a>
-                  </h3>
-                </div>
-                <div class="collapse" id="servicesCollapseTwo" aria-labelledby="servicesHeadingTwo" data-parent="#accordionServices">
-                  <div class="card-body">
-                    Sync your EV with our mobile app, the more you drive, you earn the Spark Energy Token. This is to encourage the use of EV all over the world in a bid to save our climate.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="card">
-                <div class="card-header" id="servicesHeadingThree">
-                  <h3 class="accordion-heading">
-                    <a href="#servicesCollapseThree" role="button" data-toggle="collapse" data-binded-content="#photography" aria-expanded="false" aria-controls="servicesCollapseThree" class="collapsed">
-                      <span class="accordion-indicator"></span>
-                      Power Wall Rewards
-                    </a>
-                  </h3>
-                </div>
-                <div class="collapse" id="servicesCollapseThree" aria-labelledby="servicesHeadingThree" data-parent="#accordionServices">
-                  <div class="card-body">
-                    Get rewarded with Spark Energy Token for using power walls in your home, office and other public spaces. clean energy is here to stay.
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div id="web" class="cs-binded-item">
+            <img class="d-block" src="assets/img/Spark-images-EV-milage-rewards.jpg" alt="UX / UI Design">
           </div>
-          <div class="col-lg-6 col-md-7 order-md-2 order-1 ml-auto">
-
-            <!-- Images binded to accordion -->
-            <div class="cs-binded-content mb-4">
-              <div id="identity" class="cs-binded-item active">
-                <img class="d-block" src="assets/img/home/services/ev.png" alt="Identity Design &amp; Illustration">
-              </div>
-              <div id="web" class="cs-binded-item">
-                <img class="d-block" src="assets/img/home/services/evmil.jpeg" alt="UX / UI Design">
-              </div>
-              <div id="photography" class="cs-binded-item">
-                <img class="d-block" src="assets/img/home/services/powerwall.png" alt="Photography &amp; Video Production">
-              </div>
-            </div>
+          <div id="photography" class="cs-binded-item">
+            <img class="d-block" src="assets/img/Spark-images-Powerwall.jpg" alt="Photography &amp; Video Production">
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
 
 
- <!-- Benefits -->
-        <section class="container mt-md-4 pt-lg-6 pt-5 pb-4">
-          <h2 class="h1 mb-md-5 pb-2 text-center">Roadmap</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-4 col-sm-6 col-11 d-flex flex-column order-md-1 order-2">
-              <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
-                <div class="card-body px-lg-5 px-3">
+  <!-- Benefits -->
+  <section class="container mt-md-4 pt-lg-6 pt-5 pb-4">
+    <h2 class="h1 mb-md-5 pb-2 text-center">Green Energy Roadmap</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 col-11 d-flex flex-column order-md-1 order-2">
+        <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
+          <div class="card-body px-lg-5 px-3">
 
-                  <h3 class="h5 mb-2">Phase 1</h3>
-                  <p class="mb-0 font-size-sm text-muted">Smart contract will be developed.<br>
-                    Token will be distributed.<br>
-                  Public Sale.</p>
-                </div>
-              </div>
-              <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
-                <div class="card-body px-lg-5 px-3">
-
-                  <h3 class="h5 mb-2">Phase 3</h3>
-                  <p class="mb-0 font-size-sm text-muted">Strategic partnerships will be made, with leading EV companies around to have them sync thheir networks with our mobile app.</p>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-md-4 col-sm-7 col-9 align-self-center order-md-2 order-1 mb-md-0 mb-grid-gutter pb-md-0 pb-2 px-md-0 px-sm-5">
-              <div class="cs-parallax mx-auto">
-                <div class="cs-parallax-layer" data-depth="0.05"><img src="assets/img/home/01.png" alt="Layer-1"></div>
-                <div class="cs-parallax-layer" data-depth="0.1"><img src="assets/img/home/02.svg" alt="Layer-2"></div>
-                <div class="cs-parallax-layer" data-depth="0.13"><img src="assets/img/home/03.svg" alt="Layer-3"></div>
-                <div class="cs-parallax-layer" data-depth="0.16"><img src="assets/img/home/04.svg" alt="Layer-4"></div>
-                <div class="cs-parallax-layer" data-depth="0.19"><img src="assets/img/home/05.svg" alt="Layer-5"></div>
-                <div class="cs-parallax-layer" data-depth="0.21"><img src="assets/img/home/06.svg" alt="Layer-6"></div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-11 d-flex flex-column order-md-3 order-3">
-              <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
-                <div class="card-body px-lg-5 px-3">
-
-                  <h3 class="h5 mb-2">Phase 2</h3>
-                  <p class="mb-0 font-size-sm text-muted">Team doxxing<br>
-                    $1m Market cap goal reached<br>
-                  Application to Coinmarketcap.<br>
-                Application to Coingecko.</p>
-                </div>
-              </div>
-              <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
-                <div class="card-body px-lg-5 px-3">
-
-                  <h3 class="h5 mb-2">Phase 4</h3>
-                  <p class="mb-0 font-size-sm text-muted">Android and Ios versions of the Spark energy mobile app will be designed , developed and deployed for investors, partners & volunteers to test before the official launch</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-
-
-      <!-- Team -->
-      <section class="container pt-lg-6 pt-sm-5 pb-lg-5 pb-4">
-        <div class="row">
-          <div class="col-lg-4 col-sm-5 order-sm-1 order-2">
-
-            <!-- Images binded to accordion -->
-            <div class="cs-binded-content mb-4">
-              <div id="team1" class="cs-binded-item active">
-                <img class="rounded" src="assets/img/home/team/app.png" alt="Team member">
-              </div>
-              <div id="team2" class="cs-binded-item">
-                <img class="rounded" src="assets/img/home/team/02.jpg" alt="Team member">
-              </div>
-              <div id="team3" class="cs-binded-item">
-                <img class="rounded" src="assets/img/home/team/03.jpg" alt="Team member">
-              </div>
-              <div id="team4" class="cs-binded-item">
-                <img class="rounded" src="assets/img/home/team/04.jpg" alt="Team member">
-              </div>
-            </div>
-            <a href="about.html" class="d-lg-none d-inline-block btn-block btn btn-outline-primary btn-pill">More about us</a>
-          </div>
-          <div class="col-sm-7 order-sm-2 order-1 mb-sm-0 mb-4 ml-auto">
-            <div class="d-flex justify-content-between">
-              <div class="mr-3">
-                <h3 class="h6 mb-2 text-uppercase">Spark Energy Mobile App</h3>
-                <h2 class="h1 mb-lg-5 mb-3 pb-2">Coming Soon</h2>
-              </div>
-              <div class="d-lg-block d-none">
-                <a href="about.html" class="btn btn-outline-primary btn-pill">Download App</a>
-              </div>
-            </div>
-
-            <!-- Accordion -->
-            <div class="accordion" id="accordionTeam">
-
-              <!-- Item -->
-              <div class="card">
-                <div class="card-header pt-0 pb-2" id="teamHeadingOne">
-                  <h3 class="accordion-heading h5">
-                    <a href="#teamCollapseOne" role="button" data-toggle="collapse" data-binded-content="#team1" aria-expanded="true" aria-controls="teamCollapseOne">
-                      <span class="accordion-indicator mr-3"></span>
-                      Mobile App Launch - 24th September 2021
-                    </a>
-                  </h3>
-                </div>
-                <div class="collapse show" id="teamCollapseOne" aria-labelledby="teamHeadingOne" data-parent="#accordionTeam">
-                  <div class="card-body ml-n2">
-
-                    The Spark Energy mobile app serves as an intermidiary between EV owners and charging stations. With the app, users will always be able to find the charging stations closest to their current location. The app will automatically connect withh partner charging stations to enable users pay using the Spark Energy Token.
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+            <h3 class="h5 mb-2">Phase 1</h3>
+            <p class="mb-0 font-size-sm text-muted">Smart contract development.<br>
+              Publishing and distribution of SET (PancakeSwap, TrustWallet, etc.)<br>
+              Continued distribution of tokens.</p>
           </div>
         </div>
-      </section>
+        <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
+          <div class="card-body px-lg-5 px-3">
+
+            <h3 class="h5 mb-2">Phase 3</h3>
+            <p class="mb-0 font-size-sm text-muted">Move towards strategic partnerships. <br>Reveal of locked partnerships with leading Electric Vehicle companies.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 col-sm-7 col-9 align-self-center order-md-2 order-1 mb-md-0 mb-grid-gutter pb-md-0 pb-2 px-md-0 px-sm-5">
+        <div class="cs-parallax mx-auto">
+          <div class="cs-parallax-layer" data-depth="0.05"><img src="assets/img/Roadmap.svg" alt="Layer-1"></div>
+          <div class="cs-parallax-layer" data-depth="0.1"><img src="assets/img/Roadmap.svg" alt="Layer-2"></div>
+          <div class="cs-parallax-layer" data-depth="0.13"><img src="assets/img/Roadmap.svg" alt="Layer-3"></div>
+          <div class="cs-parallax-layer" data-depth="0.16"><img src="assets/img/Roadmap.svg" alt="Layer-4"></div>
+          <div class="cs-parallax-layer" data-depth="0.19"><img src="assets/img/Roadmap.svg" alt="Layer-5"></div>
+          <div class="cs-parallax-layer" data-depth="0.21"><img src="assets/img/Roadmap.svg" alt="Layer-6"></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-11 d-flex flex-column order-md-3 order-3">
+        <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
+          <div class="card-body px-lg-5 px-3">
+
+            <h3 class="h5 mb-2">Phase 2</h3>
+            <p class="mb-0 font-size-sm text-muted">$1m Market cap goal reached<br>
+              Team doxxing<br>
+              Application to Coinmarketcap.<br>
+              Application to Coingecko.</p>
+          </div>
+        </div>
+        <div class="card card-hover h-100 mb-sm-4 mb-md-3 mb-grid-gutter py-3 text-center">
+          <div class="card-body px-lg-5 px-3">
+
+            <h3 class="h5 mb-2">Phase 4</h3>
+            <p class="mb-0 font-size-sm text-muted">Linking of EV companies and charging stations to our app.<br> Android and IOS versions of the Spark energy mobile app will be completed.<br> Official launch of the app.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-      <!-- Brands -->
-      <section class="container mt-md-4 py-lg-6 pt-5 pb-sm-5 pb-4 px-0">
-        <div class="cs-carousel cs-nav-outside">
-          <div class="d-flex justify-content-between">
-              <div class="mr-3">
-                <h3 class="h6 mb-2 text-uppercase">Anticipate these partnerships</h3>
-                <h2 class="h1 mb-lg-5 mb-3 pb-2">Partnerships</h2>
-              </div>
 
+  <!-- Team -->
+  <section class="container pt-lg-6 pt-sm-5 pb-lg-5 pb-4">
+    <div class="row">
+      <div class="col-lg-4 col-sm-5 order-sm-1 order-2">
+
+        <!-- Images binded to accordion -->
+        <div class="cs-binded-content mb-4">
+          <div id="team1" class="cs-binded-item active">
+            <img class="rounded" src="assets/img/home/team/app.png" alt="Team member">
+          </div>
+          <div id="team2" class="cs-binded-item">
+            <img class="rounded" src="assets/img/home/team/02.jpg" alt="Team member">
+          </div>
+          <div id="team3" class="cs-binded-item">
+            <img class="rounded" src="assets/img/home/team/03.jpg" alt="Team member">
+          </div>
+          <div id="team4" class="cs-binded-item">
+            <img class="rounded" src="assets/img/home/team/04.jpg" alt="Team member">
+          </div>
+        </div>
+        <a href="about.html" class="d-lg-none d-inline-block btn-block btn btn-outline-primary btn-pill">More about us</a>
+      </div>
+      <div class="col-sm-7 order-sm-2 order-1 mb-sm-0 mb-4 ml-auto">
+        <div class="d-flex justify-content-between">
+          <div class="mr-3">
+            <h3 class="h6 mb-2 text-uppercase">Spark Energy Mobile App</h3>
+            <h2 class="h1 mb-lg-5 mb-3 pb-2">Coming Soon</h2>
+          </div>
+          <div class="d-lg-block d-none">
+            <a href="about.html" class="btn btn-outline-primary btn-pill">Download App</a>
+          </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionTeam">
+
+          <!-- Item -->
+          <div class="card">
+            <div class="card-header pt-0 pb-2" id="teamHeadingOne">
+              <h3 class="accordion-heading h5">
+                <a href="#teamCollapseOne" role="button" data-toggle="collapse" data-binded-content="#team1" aria-expanded="true" aria-controls="teamCollapseOne">
+                  <span class="accordion-indicator mr-3"></span>
+                  Mobile App Launch - 24th September 2021
+                </a>
+              </h3>
             </div>
-          <div class="cs-carousel-inner" data-carousel-options='{
+            <div class="collapse show" id="teamCollapseOne" aria-labelledby="teamHeadingOne" data-parent="#accordionTeam">
+              <div class="card-body ml-n2">
+
+                The Spark Energy mobile app serves as an intermidiary between EV owners and charging stations. With the app, users will always be able to find the charging stations closest to their current location. The app will automatically connect with partner charging stations to enable users pay using the Spark Energy Token.
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Brands -->
+  <section class="container mt-md-4 py-lg-6 pt-5 pb-sm-5 pb-4 px-0">
+    <div class="cs-carousel cs-nav-outside">
+      <div class="d-flex justify-content-between">
+        <div class="mr-3">
+          <h3 class="h6 mb-2 text-uppercase">Partnership integrations in view</h3>
+          <h2 class="h1 mb-lg-5 mb-3 pb-2">Partnerships</h2>
+        </div>
+
+      </div>
+      <div class="cs-carousel-inner" data-carousel-options='{
             "nav": false,
             "controls": false,
             "autoplay": true,
             "autoplayTimeout": 4000,
             "responsive": {
               "0": {
-                "items": 2
+                "items": 1
               },
               "576": {
-                "items": 3
+                "items": 1
               },
               "768": {
-                "items": 4
+                "items": 2
               },
               "992": {
-                "items": 5
+                "items": 3
               },
               "1200": {
-                "items": 6
+                "items": 3
               }
             }
           }'>
-            <div class="px-3 text-center">
-              <a>
+        <div class="px-3 text-center">
+          <a>
 
-                <img src="assets/img/logo/tesla.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+            <img src="assets/img/logo/spark-sponsor-logos-1.png" class="cs-swap-from" width="120" alt="Brand logo">
+          </a>
+        </div>
+        <div class="px-3 text-center">
+          <a>
+
+            <img src="assets/img/logo/spark-sponsor-logos-2.png" class="cs-swap-from" width="120" alt="Brand logo">
+          </a>
+        </div>
+        <div class="px-3 text-center">
+          <a>
+
+            <img src="assets/img/logo/spark-sponsor-logos-3.png" class="cs-swap-from" width="120" alt="Brand logo">
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Core values -->
+  <section class="mt-md-4 pt-lg-6 pt-5 pb-md-6 pb-sm-5 pb-4 bg-no-repeat bg-position-center" style="background-image: url(../../assets/img/seo-agency/shapes/fill/03.svg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2 class="h1 mb-5 text-sm-left text-center">Tokenomics</h2>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
+
+                <h3 class="h5 mb-2">Total Supply</h3>
+                <p class="mb-0 text-muted">400,000,000,000</p>
+              </div>
             </div>
-            <div class="px-3 text-center">
-              <a>
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
 
-                <img src="assets/img/logo/ford.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+                <h3 class="h5 mb-2">Spark Energy Team</h3>
+                <p class="mb-0 text-muted">20,000,000,000 (5%)</p>
+              </div>
             </div>
-            <div class="px-3 text-center">
-              <a>
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
 
-                <img src="assets/img/logo/fisker.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+                <h3 class="h5 mb-2">Founding Organizations</h3>
+                <p class="mb-0 text-muted">20,000,000,000 (5% - Locked until June 2022)</p>
+              </div>
             </div>
-            <div class="px-3 text-center">
-              <a>
-
-                <img src="assets/img/logo/xpeng.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
+                <h3 class="h5 mb-2">Community Fund</h3>
+                <p class="mb-0 text-muted">60,000,000,000 (15%)</p>
+              </div>
             </div>
-            <div class="px-3 text-center">
-              <a>
-
-                <img src="assets/img/logo/general.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
+                <h3 class="h5 mb-2">Reserve </h3>
+                <p class="mb-0 text-muted">40,000,000,000 (10%)</p>
+              </div>
             </div>
-            <div class="px-3 text-center">
-              <a>
-
-                <img src="assets/img/logo/nio.png" class="cs-swap-from" width="120" alt="Brand logo">
-              </a>
+            <div class="col-sm-6 mb-5">
+              <div class="text-sm-left text-center">
+                <h3 class="h5 mb-2">Public Sale </h3>
+                <p class="mb-0 text-muted">260,000,000,000 (65%)</p>
+              </div>
             </div>
-
           </div>
         </div>
-      </section>
-
-
-       <!-- Core values -->
-        <section class="mt-md-4 pt-lg-6 pt-5 pb-md-6 pb-sm-5 pb-4 bg-no-repeat bg-position-center" style="background-image: url(../../assets/img/seo-agency/shapes/fill/03.svg);">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <h2 class="h1 mb-5 text-sm-left text-center">Tokenomics</h2>
-              </div>
-              <div class="col-lg-8">
-                <div class="row">
-                  <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Total Supply</h3>
-                      <p class="mb-0 text-muted">400,000,000,000</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Spark Energy Team</h3>
-                      <p class="mb-0 text-muted">20,000,000,000 (5%)</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Founding Organizations</h3>
-                      <p class="mb-0 text-muted">20,000,000,000 (5% - Locked until June 2022)</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Community Fund</h3>
-                      <p class="mb-0 text-muted">60,000,000,000 (15%)</p>
-                    </div>
-                     <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Reserve </h3>
-                      <p class="mb-0 text-muted">40,000,000,000 (10%)</p>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 mb-5">
-                    <div class="text-sm-left text-center">
-
-                      <h3 class="h5 mb-2">Circulating Supply </h3>
-                      <p class="mb-0 text-muted">260,000,000,000 (65%)</p>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      </div>
+    </div>
+    </div>
+  </section>
 
 
 
-      <!-- Testimonials -->
-      <section class="container pb-5 pb-lg-4">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 class="h6 mb-2 text-uppercase">Quotes</h3>
-            <h2 class="h1 mb-lg-5 mb-4 pb-2">Why Clean Energy?</h2>
+  <!-- Testimonials -->
+  <section class="container pb-5 pb-lg-4">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="h6 mb-2 text-uppercase">Quotes</h3>
+        <h2 class="h1 mb-lg-5 mb-4 pb-2">Why Clean Energy?</h2>
 
-            <!-- Carousel custom controls -->
-            <div class="tns-custom-controls cs-controls-inverse d-md-flex d-none mb-n5 mx-0" id="tns-custom-controls" tabindex="0">
-              <button class="mb-n2" type="button" data-controls="prev" tabindex="-1">
-                <i class="cxi-arrow-left"></i>
-              </button>
-              <button class="mb-n2" type="button" data-controls="next" tabindex="-1">
-                <i class="cxi-arrow-right"></i>
-              </button>
-            </div>
+        <!-- Carousel custom controls -->
+        <div class="tns-custom-controls cs-controls-inverse d-md-flex d-none mb-n5 mx-0" id="tns-custom-controls" tabindex="0">
+          <button class="mb-n2" type="button" data-controls="prev" tabindex="-1">
+            <i class="cxi-arrow-left"></i>
+          </button>
+          <button class="mb-n2" type="button" data-controls="next" tabindex="-1">
+            <i class="cxi-arrow-right"></i>
+          </button>
+        </div>
 
-            <!-- Carousel -->
-            <div class="cs-carousel cs-nav-outside">
-              <div class="cs-carousel-inner" data-carousel-options='{
+        <!-- Carousel -->
+        <div class="cs-carousel cs-nav-outside">
+          <div class="cs-carousel-inner" data-carousel-options='{
                 "gutter": 15,
                 "controlsContainer": "#tns-custom-controls",
                 "autoHeight": true,
@@ -628,261 +638,259 @@
                 }
               }'>
 
-                <!-- Testimonial -->
-                <blockquote>
-                  <img class="mb-4 rounded-circle" src="assets/img/testimonials/01.jpg" width="72" alt="Author">
-                  <p>We're running the most dangerous experiment in history right now, which is to see how much carbon dioxide the atmosphere... can handle before there is an environmental catastrophe..</p>
-                  <footer>
-                    <h3 class="h6 mb-0">Elon Musk</h3>
-                    <span class="font-size-sm text-muted">CEO, Tesla Motors</span>
-                  </footer>
-                </blockquote>
+            <!-- Testimonial -->
+            <blockquote>
+              <img class="mb-4 rounded-circle" src="assets/img/testimonials/01.jpg" width="72" alt="Author">
+              <p>We're running the most dangerous experiment in history right now, which is to see how much carbon dioxide the atmosphere... can handle before there is an environmental catastrophe..</p>
+              <footer>
+                <h3 class="h6 mb-0">Elon Musk</h3>
+                <span class="font-size-sm text-muted">CEO, Tesla Motors</span>
+              </footer>
+            </blockquote>
 
-                <!-- Testimonial -->
-                <blockquote>
-                  <img class="mb-4 rounded-circle" src="assets/img/testimonials/02.jpg" width="72" alt="Author">
-                  <p>I've been very passionate about renewable energy for many years, particularly solar energy and its capacity to bring abundant clean, sustainable energy to millions around the globe.</p>
-                  <footer>
-                    <h3 class="h6 mb-0">Richard Branson</h3>
-                    <span class="font-size-sm text-muted">English business magnate</span>
-                  </footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-
-          <!-- Image -->
-          <div class="col-lg-5 col-md-6 d-md-block d-none ml-lg-auto">
-            <img class="mb-lg-n6 rounded" src="assets/img/testimonials/03.png" alt="Testimonials">
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Blog (Recent posts) -->
-      <section class="bg-secondary pt-lg-6 py-5">
-        <div class="container pt-3 pt-lg-0">
-          <h3 class="h6 mb-2 text-uppercase">we are hiring</h3>
-          <h2 class="h1 mb-lg-5 mb-4 pb-2 d-flex align-items-center justify-content-between">
-            Join Our Team!
-
-          </h2>
-          <div class="row">
-
-            <!-- Post card: image fade in -->
-            <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
-              <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/blog/recent/01.jpeg);">
-                <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
-                  <div class="card-header border-0 pb-0">
-                    <ul class="nav nav-muted mb-2 pb-1">
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Software Engineer
-                        </a>
-                        <span class="cs-inner-text text-border px-1">|</span>
-                      </li>
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Remote
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body pt-0" style="min-height: 15rem;">
-                    <h3 class="h5 mb-2 pb-1">
-                      <a class="cs-inner-text nav-link">
-                        Primary duty is to create, maintain, and implement the source code to develop mobile apps and mobile platform programs that meet the needs and requirements of the company.<br>
-                        <br>
-                        Must have an in-depth knowledge of the different computer languages such as C++, Java, HTML, MySQL, PHP, Objective-C
-                      </a>
-                    </h3>
-                  </div>
-                  <div class="card-footer border-0">
-                    <div class="h6 mb-0 text-right">
-                      <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
-                        Apply Now
-                      </a>
-                      <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Post card: image fade in -->
-            <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
-              <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/blog/recent/02.jpg);">
-                <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
-                  <div class="card-header border-0 pb-0">
-                    <ul class="nav nav-muted mb-2 pb-1">
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Community Manager
-                        </a>
-                        <span class="cs-inner-text text-border px-1">|</span>
-                      </li>
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Remote
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body pt-0" style="min-height: 15rem;">
-                    <h3 class="h5 mb-2 pb-1">
-                      <a class="cs-inner-text nav-link">
-                        We are looking for a qualified Community manager to join our marketing team! If you are a self-driven and ambitious tech-savvy professional we would love to meet you! We are expecting you to be  experienced in social media, PR and promotional events.
-
-Ultimately, you should be able to act as the face and voice of our brand and manage all community communications.
-                      </a>
-                    </h3>
-                  </div>
-                  <div class="card-footer border-0">
-                    <div class="h6 mb-0 text-right">
-                      <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
-                        Apply Now
-                      </a>
-                      <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Post card: image fade in -->
-            <div class="col-lg-4 col-sm-6 d-sm-none d-lg-block mb-sm-grid-gutter mb-3">
-              <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/blog/recent/03.jpg);">
-                <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
-                  <div class="card-header border-0 pb-0">
-                    <ul class="nav nav-muted mb-2 pb-1">
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Digital Marketer
-                        </a>
-                        <span class="cs-inner-text text-border px-1">|</span>
-                      </li>
-                      <li class="nav-item mr-2">
-                        <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
-                          Full-Time
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card-body pt-0" style="min-height: 15rem;">
-                    <h3 class="h5 mb-2 pb-1">
-                      <a class="cs-inner-text nav-link">
-                        If you live and breathe digital marketing, we want to talk to you. We are looking for a Digital Marketing Manager to develop, implement, track and optimize our digital marketing campaigns across all digital channels.
-                      </a>
-                    </h3>
-                  </div>
-                  <div class="card-footer border-0">
-                    <div class="h6 mb-0 text-right">
-                      <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
-                        Apply Now
-                      </a>
-                      <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Contact links -->
-      <section class="container mb-4 mb-sm-5 mt-md-4 mt-lg-0 px-3 py-lg-6 py-5">
-        <h2 class="h3 mb-5 pb-2 text-center">Get on board</h2>
-        <div class="row justify-content-center px-2 px-sm-0">
-          <div class="col-md-3 col-sm-4 col px-2 px-sm-3">
-            <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">Buy SET</h3>
-            <a class="d-block" href="#">
-              <img class="rounded" src="assets/img/logo/pancake.png" alt="Pancakeswap">
-            </a>
-
-          </div>
-          <div class="divider-vertical d-sm-block d-none offset-sm-1"></div>
-          <div class="col-md-3 col-sm-4 col offset-sm-1 px-2 px-sm-3">
-            <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">See chart</h3>
-            <a class="d-block" href="#">
-              <img class="rounded" src="assets/img/logo/poocoin.png" alt="poocoin">
-            </a>
-          </div>
-        </div>
-      </section>
-    </main><!-- / Main content: .cs-page-wrapper -->
-
-
-    <!-- Footer -->
-    <footer class="cs-footer pt-3 bg-dark">
-      <div class="container py-lg-5 py-4">
-        <div class="row">
-
-          <div class="col-lg-2 col-md-3 col-12 order-md-2 order-1 offset-lg-1 mb-md-0 mb-4">
-            <h3 class="h6 mb-3 text-uppercase text-light">Quick links</h3>
-            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
-              <li class="nav-item mb-2">
-                <a href="index.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Contract</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="portfolio.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Locked Liquidity</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="about.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Token Burn</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="blog.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Renouncement</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="contacts.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Chart</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6 order-md-3 order-sm-4 order-3 offset-lg-1 mb-md-0 mb-4">
-            <h3 class="h6 mb-3 text-uppercase text-light">Follow us</h3>
-            <a href="https://twitter.com/0xsparkenergy" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
-              <i class="cxi-twitter"></i>
-            </a>
-            <a href="https://t.me/sparkenergytoken" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
-              <i class="cxi-telegram"></i>
-            </a>
-
-          </div>
-
-        </div>
-        <div class="d-flex justify-content-between mt-2 pt-1">
-          <div class="text-light">
-            <span class="d-block font-size-xs mb-1">
-              <span class="font-size-sm">&copy; </span>
-              Copyright © 2021 Spark Energy Token. All rights reserved.
-            </span>
-
-
-            </span>
-          </div>
-          <div class="d-flex align-items-end">
-            <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
-            <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll>
-              <i class="btn-scroll-top-icon cxi-angle-up"></i>
-            </a>
+            <!-- Testimonial -->
+            <blockquote>
+              <img class="mb-4 rounded-circle" src="assets/img/testimonials/02.jpg" width="72" alt="Author">
+              <p>I've been very passionate about renewable energy for many years, particularly solar energy and its capacity to bring abundant clean, sustainable energy to millions around the globe.</p>
+              <footer>
+                <h3 class="h6 mb-0">Richard Branson</h3>
+                <span class="font-size-sm text-muted">Founder, Virgin Group</span>
+              </footer>
+            </blockquote>
           </div>
         </div>
       </div>
-    </footer>
+
+      <!-- Image -->
+      <div class="col-lg-5 col-md-6 d-md-block d-none ml-lg-auto">
+        <img class="mb-lg-n6 rounded" src="assets/img/FAQ.svg" alt="Testimonials">
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Vendor scripts: js libraries and plugins-->
-    <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
-    <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
-    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <!-- Blog (Recent posts) -->
+  <section class="bg-secondary pt-lg-6 py-5">
+    <div class="container pt-3 pt-lg-0">
+      <h3 class="h6 mb-2 text-uppercase">we are hiring</h3>
+      <h2 class="h1 mb-lg-5 mb-4 pb-2 d-flex align-items-center justify-content-between">
+        Join Our Team!
 
-    <!-- Main theme script-->
-    <script src="assets/js/theme.min.js"></script>
-  </body>
+      </h2>
+      <div class="row">
+
+        <!-- Post card: image fade in -->
+        <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+          <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/Spark-Energy-Jobs.jpg);">
+            <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+              <div class="card-header border-0 pb-0">
+                <ul class="nav nav-muted mb-2 pb-1">
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Software Engineer
+                    </a>
+                    <span class="cs-inner-text text-border px-1">|</span>
+                  </li>
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Remote
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body pt-0" style="min-height: 15rem;">
+                <h3 class="h5 mb-2 pb-1">
+                  <a class="cs-inner-text nav-link">
+                    We are offering a remote Software Engineer role, with details below:
+                    <br><br>
+                    Must have an in-depth knowledge of Swift, Kotlin, XML, Objective C.
+                  </a>
+                </h3>
+              </div>
+              <div class="card-footer border-0">
+                <div class="h6 mb-0 text-right">
+                  <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
+                    Apply Now
+                  </a>
+                  <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post card: image fade in -->
+        <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+          <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/Spark-Energy-Jobs.jpg);">
+            <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+              <div class="card-header border-0 pb-0">
+                <ul class="nav nav-muted mb-2 pb-1">
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Community Manager
+                    </a>
+                    <span class="cs-inner-text text-border px-1">|</span>
+                  </li>
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Remote
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body pt-0" style="min-height: 15rem;">
+                <h3 class="h5 mb-2 pb-1">
+                  <a class="cs-inner-text nav-link">
+                    We are looking for a qualified Community manager, someone vibrant, engaging and infectious  to be added to our marketing team.
+                  </a>
+                </h3>
+              </div>
+              <div class="card-footer border-0">
+                <div class="h6 mb-0 text-right">
+                  <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
+                    Apply Now
+                  </a>
+                  <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Post card: image fade in -->
+        <div class="col-lg-4 col-sm-6 d-sm-none d-lg-block mb-sm-grid-gutter mb-3">
+          <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(assets/img/Spark-Energy-Jobs.jpg);">
+            <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+              <div class="card-header border-0 pb-0">
+                <ul class="nav nav-muted mb-2 pb-1">
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Digital Marketer
+                    </a>
+                    <span class="cs-inner-text text-border px-1">|</span>
+                  </li>
+                  <li class="nav-item mr-2">
+                    <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                      Full-Time
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body pt-0" style="min-height: 15rem;">
+                <h3 class="h5 mb-2 pb-1">
+                  <a class="cs-inner-text nav-link">
+                    If you live and breathe digital marketing, we want to talk to you. We are looking for a Digital Marketing Manager to develop, implement, track and optimize our digital marketing campaigns across all digital channels.
+                  </a>
+                </h3>
+              </div>
+              <div class="card-footer border-0">
+                <div class="h6 mb-0 text-right">
+                  <a class="cs-inner-text nav-link py-3" href="mailto:sparkenergytoken@gmail.com">
+                    Apply Now
+                  </a>
+                  <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact links -->
+  <section class="container mb-4 mb-sm-5 mt-md-4 mt-lg-0 px-3 py-lg-6 py-5">
+    <h2 class="h3 mb-5 pb-2 text-center">Start your green journey</h2>
+    <div class="row justify-content-center px-2 px-sm-0">
+      <div class="col-md-3 col-sm-4 col px-2 px-sm-3">
+        <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">Buy SET</h3>
+        <a class="d-block" href="#">
+          <img class="rounded" src="assets/img/logo/pancake.png" alt="Pancakeswap">
+        </a>
+
+      </div>
+      <div class="divider-vertical d-sm-block d-none offset-sm-1"></div>
+      <div class="col-md-3 col-sm-4 col offset-sm-1 px-2 px-sm-3">
+        <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">See chart</h3>
+        <a class="d-block" href="#">
+          <img class="rounded" src="assets/img/logo/poocoin.png" alt="poocoin">
+        </a>
+      </div>
+    </div>
+  </section>
+</main><!-- / Main content: .cs-page-wrapper -->
+
+
+<!-- Footer -->
+<footer class="cs-footer pt-3 bg-dark">
+  <div class="container py-lg-5 py-4">
+    <div class="row">
+
+      <div class="col-lg-2 col-md-3 col-12 order-md-2 order-1 offset-lg-1 mb-md-0 mb-4">
+        <h3 class="h6 mb-3 text-uppercase text-light">Quick links</h3>
+        <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+          <li class="nav-item mb-2">
+            <a href="index.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Our Contract</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="portfolio.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Locked Liquidity</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="about.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Token Burn</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="blog.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Renouncement</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="contacts.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Our Chart</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 order-md-3 order-sm-4 order-3 offset-lg-1 mb-md-0 mb-4">
+        <h3 class="h6 mb-3 text-uppercase text-light">Follow us</h3>
+        <a href="https://twitter.com/0xsparkenergy" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+          <i class="cxi-twitter"></i>
+        </a>
+        <a href="https://t.me/sparkenergytoken" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+          <i class="cxi-telegram"></i>
+        </a>
+
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-between mt-2 pt-1">
+      <div class="text-light">
+            <span class="d-block font-size-xs mb-1">
+
+              Copyright &copy; 2021 Spark Energy Token. All rights reserved.
+            </span>
+
+
+        </span>
+      </div>
+      <div class="d-flex align-items-end">
+        <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
+        <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll>
+          <i class="btn-scroll-top-icon cxi-angle-up"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Vendor scripts: js libraries and plugins-->
+<script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+<script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+<script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+<script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+
+<!-- Main theme script-->
+<script src="assets/js/theme.min.js"></script>
+</body>
 </html>
